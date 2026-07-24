@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+source: https://www.changeengine.com/ (footer "Security & Trust Center") + https://www.changeengine.com/pricing
+url: https://trust.changeengine.com/
+title: ChangeEngine Security & Trust Center
+certifications:
+- SOC 2
+- GDPR
+notes: >-
+  Trust center is a JavaScript-rendered "Trust Vault" portal linked from the site footer
+  as "Security & Trust Center". SOC 2 Certification and GDPR Compliance are published as
+  plan features on the pricing page (Access & Security section), alongside data encryption,
+  SSO, 2FA, and custom data hosting (US/EU/CA). No bug bounty or public responsible-disclosure
+  program was found; no /.well-known/security.txt is served.
+evidence:
+- source: https://www.changeengine.com/
+  kind: footer-link
+  detail: "Security & Trust Center -> https://trust.changeengine.com/"
+- source: https://www.changeengine.com/pricing
+  kind: published-feature
+  detail: "SOC 2 Certification; GDPR Compliance; Data Encryption; SSO Support; 2FA; Custom Data Hosting (US/EU/CA)"

@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.changeengine.com/pricing (Access & Security) + https://trust.changeengine.com/
+note: >-
+  ChangeEngine is an HR-tech / internal-communications SaaS with no public first-party
+  developer API or OpenAPI, so cross-cutting API standards (oauth2, rfc9457, pagination,
+  etc.) cannot be asserted from a spec. Standards below are the compliance/security
+  programs the provider publishes on its pricing page and trust center.
+standards:
+- id: soc2
+  conforms: true
+  evidence: "SOC 2 Certification listed as a plan feature on the pricing page"
+- id: gdpr
+  conforms: true
+  evidence: "GDPR Compliance listed as a plan feature; provider states GDPR-compliant in llms.txt"
+- id: sso-saml
+  conforms: true
+  evidence: "SSO Support and Okta Identity Provider Support listed as plan features"
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: "no public API specification published"

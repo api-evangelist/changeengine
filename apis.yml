@@ -1,8 +1,16 @@
 aid: changeengine
 name: ChangeEngine
-description: 'ChangeEngine is a company surfaced as a portfolio company of threshold-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  ChangeEngine is an AI-enabled internal communications and employee engagement platform for HR,
+  People, and Internal Comms teams. Founded in 2020 and headquartered in the United States, it
+  combines marketing technology with people operations to automate, personalize, and measure
+  internal messages across email, Slack, Microsoft Teams, SMS, and digital signage. Core products
+  include a Workforce Communication Orchestrator, Employee Journey Builder, AI Content Creation
+  Studio, Rewards & Recognition Automation, a Two-Way SMS Text Agent, Surveys & Listening
+  Intelligence, and Engagement Analytics. ChangeEngine integrates with 50+ HRIS systems (Workday,
+  BambooHR, UKG), Active Directory/Okta, and Microsoft 365/Google Workspace to enrich messaging
+  with real-time employee data. It publishes an llms.txt and a Security & Trust Center, and is
+  SOC 2 certified and GDPR compliant, but exposes no public first-party developer API.
 url: https://raw.githubusercontent.com/api-evangelist/changeengine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,30 @@ x-backed-by:
 - threshold-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.changeengine.com/logo.svg
 tags:
 - Company
 - Saas
+- HR Tech
+- Internal Communications
+- Employee Engagement
+- People Operations
+- Employee Experience
+- AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,34 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/changeengine-domain-security.yml
 - type: Website
   url: https://www.changeengine.com/
+- type: LLMsTxt
+  url: llms/changeengine-llms.txt
+- type: TrustCenter
+  url: https://trust.changeengine.com/
+- type: Compliance
+  url: https://trust.changeengine.com/
+- type: Conformance
+  url: conformance/changeengine-conformance.yml
+- type: Pricing
+  url: https://www.changeengine.com/pricing
+- type: TermsOfService
+  url: https://www.changeengine.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.changeengine.com/privacy-statement
+- type: Blog
+  url: https://www.changeengine.com/blog
+- type: Support
+  url: https://www.changeengine.com/contact
+- type: Login
+  url: https://app.changeengine.com/
+- type: SignUp
+  url: https://www.changeengine.com/demo
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
