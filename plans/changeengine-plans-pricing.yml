@@ -1,0 +1,42 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.changeengine.com/pricing
+sources:
+- https://www.changeengine.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Page prices an internal-comms SaaS product, not an API. Only Entry has a numeric price; other tiers
+  are custom quotes. The page text also contains an apparently unrelated leftover template block (Free
+  $0/year, Essentials $280/year, Standard $800/year, Pro $1280/year referencing 'Maze'), which does not
+  appear to be ChangeEngine pricing and is excluded.
+plan_count: 3
+currency: USD
+plans:
+- name: Entry
+  price_text: Starting at $350/month
+  price: 350
+  currency: USD
+  period: month
+  unit: For 200 employees
+  included_quota: Drag-and-drop branded emails; Open, click, and engagement analytics; Personalized Tone
+    AI and templates; Automated journey scheduling
+- name: Engage
+  price_text: Custom Quote
+  period: none
+  included_quota: Dynamic segmentation and personalized journeys; Slack, Teams, and SMS delivery; Content
+    AI; HRIS and Active Directory Integration
+- name: Enterprise
+  price_text: Custom Quote
+  period: none
+  included_quota: AI-powered content libraries; full cross-channel orchestration; advanced roles/permissions;
+    dedicated design services team
